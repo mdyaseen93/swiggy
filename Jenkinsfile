@@ -37,7 +37,7 @@ pipeline {
 
     environment {
 
-        AWS_REGION = 'eu-north-1'
+        AWS_REGION = 'us-east-1c'
 
         ECR_REPOSITORY = 'devops-demo-app'
 
@@ -46,11 +46,11 @@ pipeline {
          * EC2 PRIVATE IP ADDRESSES
          */
 
-        DEV_HOST  = '13.62.229.60'
+        DEV_HOST  = '18.234.62.63'
 
-        QA_HOST   = '16.171.115.119'
+        QA_HOST   = '98.81.59.164'
 
-        PROD_HOST = '13.48.71.57'
+        PROD_HOST = '3.85.123.185'
 
 
         /*
@@ -96,11 +96,11 @@ pipeline {
                 echo "=========================================="
 
                 echo "Repository:"
-                echo "https://github.com/Abdul622-eng/swiggy.git"
+                echo "https://github.com/mdyaseen93/swiggy.git"
 
                 git(
                     branch: 'main',
-                    url: 'https://github.com/Abdul622-eng/swiggy.git'
+                    url: 'https://github.com/mdyaseen93/swiggy.git'
                 )
 
                 echo "Checkout completed"
