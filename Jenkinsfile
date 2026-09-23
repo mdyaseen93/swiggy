@@ -37,7 +37,7 @@ pipeline {
 
     environment {
 
-        AWS_REGION = 'us-east-1c'
+        AWS_REGION = 'us-east-1'
 
         ECR_REPOSITORY = 'devops-demo-app'
 
